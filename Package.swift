@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SLAI",
+    name: "SLCompose",
     platforms: [
         .iOS(.v17),
         .macOS(.v14)
@@ -12,27 +12,27 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SLAI",
-            targets: ["SLAI"]),
+            name: "SLCompose",
+            targets: ["SLCompose"]),
         .library(
-            name: "SLAI_Cpp",
-            targets: ["SLAI_Cpp"])
+            name: "SLCompose_Cpp",
+            targets: ["SLCompose_Cpp"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SLAI",
-            path: "Sources/SLAI"
+            name: "SLCompose",
+            path: "Sources/SLCompose"
         ),
         .target(
-            name: "SLAI_Cpp",
-            dependencies: ["SLAI"],
-            path: "Sources/SLAI_Cpp",
-            publicHeadersPath: "Sources/SLAI_Cpp/Include"
+            name: "SLCompose_Cpp",
+            dependencies: ["SLCompose_Cpp"],
+            path: "Sources/SLCompose_Cpp",
+            publicHeadersPath: "Sources/SLCompose_Cpp/Include"
         ),
         .testTarget(
             name: "SLAI_Tests",
-            dependencies: ["SLAI"]),
+            dependencies: ["SLCompose"]),
     ]
 )
