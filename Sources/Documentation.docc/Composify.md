@@ -5,6 +5,10 @@ Integrate ScribbleCompose into an iOS app for using an AI-powered tool that can 
 @Metadata {
     @CallToAction( purpose: link, url: "https://github.com/ScribbleLabApp/Composify" )
     @PageKind(sampleCode)
+    @PageImage(
+        purpose: card,
+        source: "compose-hero",
+        alt: "Two screenshots showing the Composify app.")
     @SupportedLanguage(swift)
     @SupportedLanguage(cpp)
     @Available(macOS, introduced: "14.1.2")

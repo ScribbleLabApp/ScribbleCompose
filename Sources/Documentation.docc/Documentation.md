@@ -15,12 +15,14 @@ ScribbleLab is a powerful text editor built by students, for students, written e
 ### Featured:
 
 @Links(visualStyle: detailedGrid) {
+    - <doc:GettingStarted>
     - <doc:Composify>
 }
 
 ## Topics
 
 ### Essentials
+- <doc:GettingStarted>
 - <doc:Composify>
 
 - <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
