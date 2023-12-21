@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ScribbleLab AI",
+    name: "SLAI",
     platforms: [
         .iOS(.v17),
         .macOS(.v14)
@@ -12,21 +12,24 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "ScribbleLab AI",
-            targets: ["ScribbleLab AI"]),
+            name: "SLAI",
+            targets: ["SLAI"]),
         .library(
-            name: "ScribbleLab AI Cpp",
-            targets: ["ScribbleLab AI Cpp"])
+            name: "SLAI_Cpp",
+            targets: ["SLAI_Cpp"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "ScribbleLab AI"),
+            name: "SLAI",
+            path: "Sources/SLAI"
+        ),
         .target(
-            name: "ScribbleLab_AI_Cpp",
-            dependencies: ["ScribbleLab_AI"],
-            path: "Sources/ScribbleLab_AI_Cpp"
+            name: "SLAI_Cpp",
+            dependencies: ["SLAI"],
+            path: "Sources/SLAI_Cpp",
+            publicHeadersPath: "Sources/SLAI_Cpp/Include"
         ),
         .testTarget(
             name: "ScribbleLab AITests",

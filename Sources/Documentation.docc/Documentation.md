@@ -1,10 +1,17 @@
-# ````
+# ScribbleLab AI
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+ScribbleLab's generative AI
+
+@Metadata {
+    @PageColor(yellow)
+}
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+Text
+
+### Featured:
+
 
 ## Topics
 
