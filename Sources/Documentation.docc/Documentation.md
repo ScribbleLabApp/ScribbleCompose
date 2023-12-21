@@ -4,6 +4,7 @@ ScribbleLab's generative AI-powered tool that can create text, change the tone, 
 
 @Metadata {
     @PageColor(yellow)
+    <!-->@DisplayName("ScribbleCompose")-->
 }
 
 ## Overview
