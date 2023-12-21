@@ -33,6 +33,7 @@ let package = Package(
         ),
         .testTarget(
             name: "SLComposeTests",
-            dependencies: ["SLCompose"]),
+            dependencies: ["SLCompose"]
+        )
     ]
 )

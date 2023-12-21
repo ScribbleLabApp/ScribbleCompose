@@ -1,6 +1,6 @@
 # ScribbleCompose
 
-ScribbleLab's generative AI
+ScribbleLab's generative AI-powered tool that can create text, change the tone, and paraphrase the text
 
 @Metadata {
     @PageColor(yellow)

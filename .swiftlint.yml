@@ -1,0 +1,10 @@
+identifier_name:
+  allowed_symbols: ['_']
+
+large_tuple:
+  warning: 5
+
+excluded:
+  - .build
+  - .git
+  - .swiftpm
