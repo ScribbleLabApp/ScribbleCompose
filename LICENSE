@@ -5,7 +5,25 @@
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
    1. Definitions.
-
+   
+      "ScribbleLabApp" shall mean ScribbleLabApp LLC.
+      
+      "ScribbleLab" shall mean the underlying App regiestered and signed by
+      ScribbleLabApp LLC.
+      
+      “ScribbleLab Developer Program License Agreement” shall mean a separate
+      agreement that may be entered into between You and ScribbleLabApp regarding
+      the development to this App.
+      
+      "ScribbleCompose" shall mean the own protected Artificial Intelligence of
+      ScribbleLab.
+      
+      "SLA" or "SLAuthService" shall mean the Core Authentication Service from
+      ScribbleLab that is protected with a secondary License.
+      
+      "SL" refers to a specific Core Service that is dependent on ScribbleLab.
+      It is important to note that "SL" is a trademark of ScribbleLabApp.
+      
       "License" shall mean the terms and conditions for use, reproduction,
       and distribution as defined by Sections 1 through 9 of this document.
 
@@ -119,6 +137,10 @@
           or as an addendum to the NOTICE text from the Work, provided
           that such additional attribution notices cannot be construed
           as modifying the License.
+          
+      (e) It is permissible for you to utilize the source code from
+          ScribbleLab or ScribbleCompose. However, it is not permissible
+          for you to generate proceeds from our services.
 
       You may add Your own copyright statement to Your modifications and
       may provide additional or different license terms and conditions

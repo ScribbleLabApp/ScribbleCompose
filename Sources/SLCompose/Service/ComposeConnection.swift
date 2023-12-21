@@ -1,7 +1,5 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
 //
-//  SLCompose.swift
+//  ComposeConnection.swift
 //  ScribbleCompose (AI Lab)
 //
 //  Copyright (c) 2023 - 2024 ScribbleLabApp.
@@ -18,3 +16,5 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
+
+import Foundation
