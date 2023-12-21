@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://github.com/ScribbleLabApp/ScribbleLabCLI/assets/129311622/d35ec042-0f65-4b7e-9f77-587575cfd495" alt="Logo" height="128">
-  <h1 align="center">ScribbleLab AI</h1>
+  <h1 align="center">Scribble Compose</h1>
 </p>
 
 <p align="center">
