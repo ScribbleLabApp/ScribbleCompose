@@ -20,3 +20,5 @@ We are pleased to introduce 'ScribbleCompose', our new generative Artificial Int
 
 [![Deploy DocC](https://github.com/ScribbleLabApp/ScribbleLab-AI/actions/workflows/CI-deploy-docc.yml/badge.svg)](https://github.com/ScribbleLabApp/ScribbleLab-AI/actions/workflows/CI-deploy-docc.yml)
 [![SwiftLint](https://github.com/ScribbleLabApp/ScribbleCompose/actions/workflows/CI-linting.yml/badge.svg)](https://github.com/ScribbleLabApp/ScribbleCompose/actions/workflows/CI-linting.yml)
+
+## Table Of Contents
