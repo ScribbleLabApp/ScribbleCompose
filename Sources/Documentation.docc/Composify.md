@@ -3,7 +3,7 @@
 Integrate ScribbleCompose into an iOS app for using an AI-powered tool that can create text, change the tone, and paraphrase the text.
 
 @Metadata {
-    @CallToAction( purpose: link, url: "https://github.com/ScribbleLabApp/ScribbleLab" )
+    @CallToAction( purpose: link, url: "https://github.com/ScribbleLabApp/Composify" )
     @PageKind(sampleCode)
 }
 
