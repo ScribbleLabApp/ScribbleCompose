@@ -1,7 +1,7 @@
 import XCTest
-@testable import ScribbleLab_AI
+@testable import ScribbleLab AI
 
-final class ScribbleLab_AITests: XCTestCase {
+final class SLAITests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

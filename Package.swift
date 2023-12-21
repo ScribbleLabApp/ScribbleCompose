@@ -32,7 +32,7 @@ let package = Package(
             publicHeadersPath: "Sources/SLAI_Cpp/Include"
         ),
         .testTarget(
-            name: "ScribbleLab AITests",
-            dependencies: ["ScribbleLab AI"]),
+            name: "SLAI_Tests",
+            dependencies: ["SLAI"]),
     ]
 )
