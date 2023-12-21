@@ -27,7 +27,7 @@ let package = Package(
         ),
         .target(
             name: "SLCompose_Cpp",
-            dependencies: ["SLCompose_Cpp"],
+            dependencies: ["SLCompose"],
             path: "Sources/SLCompose_Cpp",
             publicHeadersPath: "Sources/SLCompose_Cpp/Include"
         ),
