@@ -1,4 +1,4 @@
-# ScribbleLab AI
+# ScribbleCompose
 
 ScribbleLab's generative AI
 
@@ -8,13 +8,26 @@ ScribbleLab's generative AI
 
 ## Overview
 
-Text
+ScribbleLab is a powerful text editor built by students, for students, written entirely and unapologetically for iOS, iPadOS and macOS. We are pleased to introduce 'ScribbleCompose', our new generative Artificial Intelligence software that will enhance your productivity in combination with ScribbleLab.
+
 
 ### Featured:
 
+@Links(visualStyle: detailedGrid) {
+    - <doc:Composify>
+}
 
 ## Topics
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
+### Essentials
+- <doc:Composify>
 
 - <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
+
+### Services
+
+
+### C++ Models
+
+
+### User Interface Components

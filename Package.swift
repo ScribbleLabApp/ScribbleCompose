@@ -32,7 +32,7 @@ let package = Package(
             publicHeadersPath: "Include/SLCompose_Cpp"
         ),
         .testTarget(
-            name: "SLAI_Tests",
+            name: "SLComposeTests",
             dependencies: ["SLCompose"]),
     ]
 )
