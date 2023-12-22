@@ -4,7 +4,6 @@ ScribbleLab's generative AI-powered tool that can create text, change the tone, 
 
 @Metadata {
     @PageColor(yellow)
-    <!-->@DisplayName("ScribbleCompose")-->
 }
 
 ## Overview
@@ -24,8 +23,6 @@ ScribbleLab is a powerful text editor built by students, for students, written e
 ### Essentials
 - <doc:GettingStarted>
 - <doc:Composify>
-
-- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
 
 ### Services
 

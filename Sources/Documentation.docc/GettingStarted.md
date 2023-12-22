@@ -1,6 +1,11 @@
 # Getting Started with ScribbleCompose
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+Configure ScribbleCompose and create a rich AI experience.
+
+@Metadata {
+    @SupportedLanguage(swift)
+    @SupportedLanguage(cpp)
+}
 
 ## Overview
 
