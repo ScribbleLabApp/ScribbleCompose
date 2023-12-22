@@ -1,7 +1,5 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
 //
-//  SLCompose.swift
+//  CCConnection.swift
 //  ScribbleCompose (AI Lab)
 //
 //  Copyright (c) 2023 - 2024 ScribbleLabApp.
@@ -18,3 +16,17 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
+
+import Foundation
+
+enum CCConnectionError: Error {
+    case invalidURL
+    case invalidRequestBody
+    case noDataReceived
+    case jsonDecodingError
+}
+
+protocol CCConnection {
+    var apiKey: String { get }
+    func getResponseFromGPT(prompt: String, completion: @escaping (Result<Any, Error>) -> Void)
+}
