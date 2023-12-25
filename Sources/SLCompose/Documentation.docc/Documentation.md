@@ -1,4 +1,4 @@
-# ScribbleCompose
+# ``SLCompose``
 
 ScribbleLab's generative AI-powered tool that can create text, change the tone, and paraphrase the text
 
@@ -23,9 +23,13 @@ ScribbleLab is a powerful text editor built by students, for students, written e
 ### Essentials
 - <doc:GettingStarted>
 - <doc:Composify>
+- <doc:ScribbleCompose>
+
+### Guides
+- <doc:Configuration>
 
 ### Services
-
+- ``CFConnection``
 
 ### C++ Models
 

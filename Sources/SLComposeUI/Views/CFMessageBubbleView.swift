@@ -19,7 +19,7 @@
 
 import SwiftUI
 
-struct MessageBubbleView: View {
+struct CFMessageBubbleView: View {
     let message: String
     let isUser: Bool
     
@@ -45,5 +45,5 @@ struct MessageBubbleView: View {
 }
 
 #Preview {
-    MessageBubbleView()
+    CFMessageBubbleView(message: "", isUser: true)
 }

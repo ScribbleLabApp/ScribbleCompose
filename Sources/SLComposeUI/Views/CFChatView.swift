@@ -19,8 +19,8 @@
 
 import SwiftUI
 
-struct CChatView: View {
-    @StateObject var viewModel = CChatViewModel()
+struct CFChatView: View {
+    @StateObject var viewModel = CFChatViewModel()
     
     var body: some View {
         VStack {
@@ -30,7 +30,7 @@ struct CChatView: View {
                         let message = viewModel.chatHistory[index]
                         let isUser = index % 2 == 0
                         
-                        MessageBubbleView(message: message, isUser: isUser)
+                        CFMessageBubbleView(message: message, isUser: isUser)
                     }
                 }
             }
@@ -42,18 +42,18 @@ struct CChatView: View {
                 Divider()
                 
                 HStack {
-                    TextField("Type a message...", text: $userMessage)
+                    TextField("Type a message...", text: $viewModel.userMessage)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
                     
                     Button {
-                        viewModel.chatHistory.append(userMessage)
-                        userMessage = ""
-                        viewModel.chatHistory.append("GPT response for: \(userMessage)")
+                        viewModel.chatHistory.append(viewModel.userMessage)
+                        viewModel.userMessage = ""
+                        viewModel.chatHistory.append("GPT response for: \(viewModel.userMessage)")
                     } label: {
                         HStack(spacing: 5) {
                             Text("Send")
-                            Image(systemImage: "paperplane.fill")
+                            Image(systemName: "paperplane.fill")
                         }
                         .foregroundStyle(Color.white)
                         .background {
@@ -69,5 +69,5 @@ struct CChatView: View {
 }
 
 #Preview {
-    CChatView()
+    CFChatView()
 }

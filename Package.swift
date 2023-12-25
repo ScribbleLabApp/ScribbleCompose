@@ -14,9 +14,10 @@ let package = Package(
         .library(
             name: "SLCompose",
             targets: ["SLCompose"]),
-        .library(
+        /*.library(
             name: "SLCompose_Cpp",
-            targets: ["SLCompose_Cpp"])
+            targets: ["SLCompose_Cpp"])*/
+        .library(name: "SLComposeUI", targets: ["SLComposeUI"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -25,11 +26,15 @@ let package = Package(
             name: "SLCompose",
             path: "Sources/SLCompose"
         ),
-        .target(
+        /*.target(
             name: "SLCompose_Cpp",
             dependencies: ["SLCompose"],
             path: "Sources/SLCompose_Cpp",
             publicHeadersPath: "Include/SLCompose_Cpp"
+        ),*/
+        .target(
+            name: "SLComposeUI",
+            path: "Sources/SLComposeUI"
         ),
         .testTarget(
             name: "SLComposeTests",

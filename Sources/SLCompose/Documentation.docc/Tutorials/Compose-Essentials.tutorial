@@ -1,0 +1,72 @@
+@Tutorial(time: 40) {
+    @XcodeRequirement(
+            title: "Xcode 15", 
+            destination: "https://developer.apple.com/download/")
+    
+    @Intro(title: "Creating the demo app's UI") {
+        This tutorial guides you through building Composify — an app for generating and improving texts you've written. You’ll start by building the view that shows a List with all past conversations.
+        
+        To lay out the views, ... As you refine the view’s design, Xcode provides real-time feedback so you can see how those changes translate into code.
+        
+        Download the project files to begin building this project, and follow the steps below.
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+    }
+    
+    @Section(title: "<#text#>") {
+        @ContentAndMedia {
+            <#text#>
+            
+            @Image(source: <#file#>, alt: "<#accessible description#>")
+        }
+        
+        @Steps {
+            @Step {
+                <#text#>
+                
+                @Image(source: <#file#>, alt: "<#accessible description#>")
+            }
+            
+            @Step {
+                <#text#>
+                
+                @Code(name: "<#display name#>", file: <#filename.swift#>)
+            }
+        }
+    }
+    
+    @Assessments {
+        @MultipleChoice {
+            What element did you use to add space around and between your views?
+
+
+            @Choice(isCorrect: false) {
+                A state variable.
+
+
+                @Justification(reaction: "Try again!") {
+                    Remember, it's something you used to arrange views vertically.
+                }
+            }
+
+
+            @Choice(isCorrect: true) {
+                A `VStack` with trailing padding.
+
+                @Justification(reaction: "That's right!") {
+                    A `VStack` arranges views in a vertical line.
+                }
+            }
+
+
+            @Choice(isCorrect: false) {
+                A state variable.
+
+
+                @Justification(reaction: "Try again!") {
+                    Remember, it's something you used to arrange views vertically.
+                }
+            }
+        }  
+    }
+}

@@ -1,5 +1,5 @@
 import XCTest
-@testable import ScribbleLab AI
+@testable import SLCompose
 
 final class SLAITests: XCTestCase {
     func testExample() throws {

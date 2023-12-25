@@ -1,0 +1,66 @@
+@Tutorials(name: "ScribbleCompose-Tutorial") {
+    @Intro(title: "Meet ScribbleCompose") {
+        Create, inspire, and offer a rich AI experience with ScribbleCompose. Get started with ScribbleCompose by building the demo app Composify.
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+    }
+    
+    @Chapter(name: "ScribbleCompose Essentials") {
+        Learn how to use SwiftUI and ScribbleCompose to compose rich views out of simple ones, set up data flow, and build the navigation while watching it unfold in Xcode’s preview.
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+        
+        @TutorialReference(tutorial: "doc:Compose-Essentials")
+    }
+    
+    @Chapter(name: "ScribbleCompose Models & Services") {
+        Exploring ScribbleCompose Models and Services and implementing them into Composify.
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+        
+        @TutorialReference(tutorial: "doc:")
+    }
+    
+    @Chapter(name: "App Design and Layout") {
+        Explore the structure and layout of more complex interfaces built with SwiftUI and ScribbleCompose UI Libaries.
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+        
+        @TutorialReference(tutorial: "doc:")
+    }
+    
+    @Chapter(name: "Framework Integration") {
+        Use SwiftUI views together with the views and view controllers from platform-specific UI frameworks.
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+        
+        @TutorialReference(tutorial: "doc:")
+    }
+    
+    @Resources {
+        Explore more resources for learning about ScribbleCompose.
+        
+        @Documentation(destination: "https://github.com/ScribbleLabApp/ScribbleCompose") {
+            Browse and search compose-related documentation.
+
+            - [ScribbleCompose API](https://github.com/ScribbleLabApp/ScribbleCompose)
+            - [Compose Technical Specification](https://github.com/ScribbleLabApp/ScribbleCompose)
+            - [ScribbleCompose UI Libary](https://github.com/ScribbleLabApp/ScribbleCompose)
+            - [ScribbleComposeModels](https://github.com/ScribbleLabApp/ScribbleCompose)
+        }
+        
+        @SampleCode(destination: "https://github.com/ScribbleLabApp/") {
+            Download and explore sample code projects to get to know ScribbleCompose.
+
+            - [Composify: Create a rich and fun AI experience for everyone](https://github.com/ScribbleLabApp/sample-Composify)
+            - [ComposeAR: Create a rich learning experience with ScribbleCompose](https://github.com/ScribbleLabApp/sample-compose-ar)
+        }
+        
+        @Forums(destination: "https://github.com/ScribbleLabApp/") {
+            Get support for your Compose integartion and connect with others.
+
+            - [ScribbleCompose Help: Get Assistance with Compose Development.](https://github.com/ScribbleLabApp/ScribbleCompose)
+            - [Compose Talk: Meet Others Who Like and Use ScribbleCompose Too](https://github.com/ScribbleLabApp/ScribbleCompose)
+        }
+    }
+}

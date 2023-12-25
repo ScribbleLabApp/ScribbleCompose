@@ -19,14 +19,14 @@
 
 import Foundation
 
-enum CCConnectionError: Error {
+enum CFConnectionError: Error {
     case invalidURL
     case invalidRequestBody
     case noDataReceived
     case jsonDecodingError
 }
 
-protocol CCConnection {
+protocol CFConnection {
     var apiKey: String { get }
     func getResponseFromGPT(prompt: String, completion: @escaping (Result<Any, Error>) -> Void)
 }
