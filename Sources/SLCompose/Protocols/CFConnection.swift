@@ -42,7 +42,7 @@ public protocol CFConnection {
     /// - Parameters:
     ///   - prompt: The prompt for the GPT API request.
     ///   - completion: The completion handler called when the request finishes. The handler has a `Result` parameter, which represents either a successful API response or an error.
-    ///   - maxToken: The
+    ///   - maxToken: The max number of requests for a user
     func getResponseFromGPT(prompt: String, maxToken: Int, completion: @escaping (Result<Any, CFConnectionError>) -> Void)
 }
 
