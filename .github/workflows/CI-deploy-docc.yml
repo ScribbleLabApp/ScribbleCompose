@@ -36,8 +36,6 @@ jobs:
           rm -rf ~/Library/Developer/Xcode/DerivedData
       - name: Build DocC
         run: |
-          swift build
-          swift package generate-xcodeproj
           xcodebuild docbuild -scheme SLCompose \
             -derivedDataPath /tmp/docbuild \
             -destination 'generic/platform=iOS' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO;
