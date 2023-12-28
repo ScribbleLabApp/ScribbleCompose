@@ -28,16 +28,24 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+      - name: Select Xcode Version ✨
+        run: |
+          sudo xcode-select -switch /Applications/Xcode_15.0.1.app/Contents/Developer
+      - name: Delete DerivedData directory 🗑️
+        run: |
+          rm -rf ~/Library/Developer/Xcode/DerivedData
       - name: Build DocC
         run: |
-          xcodebuild docbuild -scheme ScribbleLab \
+          swift build
+          swift package generate-xcodeproj
+          xcodebuild docbuild -scheme SLCompose \
             -derivedDataPath /tmp/docbuild \
             -destination 'generic/platform=iOS' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO;
           $(xcrun --find docc) process-archive \
-            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/ScribbleLab.doccarchive \
-            --hosting-base-path ScribbleLab \
+            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/SLCompose.doccarchive \
+            --hosting-base-path SLCompose \
             --output-path docs;
-          echo "<script>window.location.href += \"/documentation/scribblelab\"</script>" > docs/index.html;
+          echo "<script>window.location.href += \"/documentation/slcompose\"</script>" > docs/index.html;
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

@@ -7,34 +7,31 @@ let package = Package(
     name: "SLCompose",
     platforms: [
         .iOS(.v17),
-        .macOS(.v14)
+        .macOS(.v14),
+        .watchOS(.v10),
+        .visionOS(.v1),
+        .tvOS(.v17),
+        .macCatalyst(.v17)
     ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SLCompose",
             targets: ["SLCompose"]),
-        /*.library(
-            name: "SLCompose_Cpp",
-            targets: ["SLCompose_Cpp"])*/
-        .library(name: "SLComposeUI", targets: ["SLComposeUI"])
+        .library(name: "SLComposeUI", targets: ["SLComposeUI"]),
+        .library(name: "SLComposeService", targets: ["SLComposeService"])
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "SLCompose",
             path: "Sources/SLCompose"
         ),
-        /*.target(
-            name: "SLCompose_Cpp",
-            dependencies: ["SLCompose"],
-            path: "Sources/SLCompose_Cpp",
-            publicHeadersPath: "Include/SLCompose_Cpp"
-        ),*/
         .target(
             name: "SLComposeUI",
             path: "Sources/SLComposeUI"
+        ),
+        .target(
+            name: "SLComposeService",
+            path: "Sources/SLComposeService"
         ),
         .testTarget(
             name: "SLComposeTests",

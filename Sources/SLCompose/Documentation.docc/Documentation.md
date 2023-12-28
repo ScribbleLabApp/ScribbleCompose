@@ -30,8 +30,9 @@ ScribbleLab is a powerful text editor built by students, for students, written e
 
 ### Services
 - ``CFConnection``
+- ``CFConnectionError``
 
-### C++ Models
+### Views
 
-
-### User Interface Components
+### Framework Integration
+- <doc:Framework-Swift>
