@@ -20,30 +20,11 @@
 import SwiftUI
 
 struct CFMessageBubbleView: View {
-    let message: String
-    let isUser: Bool
-    
     var body: some View {
-        HStack {
-            if isUser {
-                Spacer()
-                Text(message)
-                    .padding(10)
-                    .background(Color.blue)
-                    .foregroundStyle(Color.white)
-                    .cornerRadius(8)
-            } else {
-                Text(message)
-                    .padding(10)
-                    .background(Color.white)
-                    .foregroundColor(.black)
-                    .cornerRadius(8)
-                Spacer()
-            }
-        }
+        Text("Hi")
     }
 }
 
 #Preview {
-    CFMessageBubbleView(message: "", isUser: true)
+    CFMessageBubbleView()
 }

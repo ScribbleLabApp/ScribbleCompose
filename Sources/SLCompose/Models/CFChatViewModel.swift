@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CFChatViewModel: ObservableObject {
+public class CFChatViewModel: ObservableObject {
     @Published var userMessage: String = ""
     @Published var chatHistory: [String] = []
 }
