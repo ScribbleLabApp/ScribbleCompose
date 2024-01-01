@@ -49,7 +49,7 @@ jobs:
           chmod -v -R +rX "$INPUT_PATH" | while read line; do
           echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
-          chmod +r "$INPUT_PATH/index/data.mdb"
+          chmod +r "$INPUT_PATH/docs/index/data.mdb"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
