@@ -47,9 +47,14 @@ jobs:
       - name: Fix permissions
         run: |
           chmod -v -R +rX "$INPUT_PATH" | while read line; do
-          echo "::warning title=Invalid file permissions automatically fixed::$line"
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
-          chmod +r "$INPUT_PATH/docs/index/data.mdb"
+          file_path="$INPUT_PATH/docs/index/data.mdb"
+          if [ -f "$file_path" ]; then
+            chmod +r "$file_path"
+          else
+            echo "File '$file_path' not found."
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
