@@ -46,9 +46,10 @@ jobs:
           echo "<script>window.location.href += \"/documentation/slcompose\"</script>" > docs/index.html;
       - name: Fix permissions
         run: |
-          chmod -v -R +rX "_site/" | while read line; do
+          chmod -v -R +rX "$INPUT_PATH" | while read line; do
           echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
+          chmod +r "$INPUT_PATH/index/data.mdb"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
