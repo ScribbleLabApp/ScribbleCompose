@@ -44,6 +44,11 @@ jobs:
             --hosting-base-path SLCompose \
             --output-path docs;
           echo "<script>window.location.href += \"/documentation/slcompose\"</script>" > docs/index.html;
+      - name: Fix permissions
+        run: |
+          chmod -v -R +rX "_site/" | while read line; do
+          echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
